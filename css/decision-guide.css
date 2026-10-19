@@ -1,0 +1,91 @@
+/* Additional information for visitors considering adoption. */
+#target,#use-case,#plan,#pricing{scroll-margin-top:96px}
+.decision-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:24px;font-size:.83rem;font-weight:700;color:var(--ink-2)}
+.decision-links a{border-bottom:1px solid #d7bba4;padding-bottom:3px}
+.decision-links a:hover,.guide-link:hover{color:var(--brand-2)}
+.decision-links span{color:var(--brand);margin-left:4px}
+.fit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.fit-card{display:flex;flex-direction:column;padding:30px 26px;background:#fff;border-top:3px solid var(--brand);border-radius:0 0 var(--radius) var(--radius)}
+.guide-number{font-size:.76rem;font-weight:700;letter-spacing:.03em;color:var(--brand-2)}
+.fit-card h3{font-size:1.18rem;line-height:1.6;margin:15px 0}
+.fit-card p{color:var(--ink-2);font-size:.9rem;margin-bottom:24px}
+.guide-link{margin-top:auto;font-size:.84rem;font-weight:700;color:var(--brand-2)}
+.industry-heading{margin:52px 0 22px;max-width:780px}
+.industry-heading h3{font-size:1.4rem}
+.industry-heading p,.guide-note{font-size:.85rem;color:var(--muted);margin-top:12px}
+.industry-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.industry-card{padding:30px;background:#fff;border:1px solid var(--line);border-radius:var(--radius)}
+.industry-title{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+.industry-title i{font-size:1.7rem;color:var(--brand-2)}
+.industry-title h4{font-size:1.25rem}
+.industry-title>span{margin-left:auto;padding:3px 10px;background:var(--bg-soft);border-radius:4px;font-size:.73rem;color:var(--ink-2)}
+.guide-details>div+div{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+.guide-details dt{font-weight:700;font-size:.78rem;color:var(--brand-2);margin-bottom:6px}
+.guide-details dd{font-size:.9rem;color:var(--ink-2)}
+.guide-note{text-align:center}
+.workflow-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start}
+.example-label{font-size:.78rem;font-weight:700;color:var(--brand-2);margin-bottom:12px}
+.workflow-story blockquote{font-size:1.22rem;font-weight:700;line-height:1.9;padding-left:20px;border-left:3px solid var(--brand);margin-bottom:30px}
+.workflow-steps{list-style:none;counter-reset:workflow}
+.workflow-steps li{position:relative;counter-increment:workflow;padding:0 0 24px 52px}
+.workflow-steps li:not(:last-child)::after{content:"";position:absolute;top:36px;bottom:0;left:17px;width:1px;background:var(--line)}
+.workflow-steps li::before{content:counter(workflow,decimal-leading-zero);position:absolute;left:0;top:0;display:grid;place-items:center;width:36px;height:36px;background:var(--bg-soft);border:1px solid var(--line);border-radius:50%;font-family:"Manrope",sans-serif;font-size:.78rem;font-weight:800;color:var(--brand-2)}
+.workflow-steps h3{font-size:1rem;padding-top:5px;margin-bottom:6px}
+.workflow-steps p{font-size:.88rem;color:var(--muted)}
+.output-sample{background:#fffcfa;border:1px solid #edd9c9;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow)}
+.output-head{display:flex;align-items:center;gap:8px;color:var(--brand-2);font-size:.78rem;font-weight:700;margin-bottom:28px}
+.sample-mark{margin-left:auto;color:var(--muted);font-size:.7rem;border:1px solid var(--line);border-radius:4px;padding:2px 8px}
+.output-sample h3{font-size:1.6rem}
+.output-caption{color:var(--muted);font-size:.78rem;margin:8px 0 26px}
+.sample-footnote{font-size:.76rem;color:var(--muted);margin-top:26px}
+.guide-cta{display:flex;justify-content:center;margin-top:30px}
+.plan{background:var(--bg-soft)}
+.pricing-overview{display:flex;align-items:center;justify-content:space-between;gap:36px;max-width:900px;margin:0 auto 48px;padding:36px 42px;background:var(--bg-dark);border-radius:var(--radius);color:#fff}
+.pricing-copy .tag{color:#ffcfa0;margin-bottom:6px}
+.pricing-copy h3{font-size:1.25rem}
+.pricing-copy p{color:#ecd9c8;font-size:.85rem;margin-top:10px}
+.price-figures{display:flex;gap:40px;flex-shrink:0}
+.price-figures dt{font-size:.82rem;color:#ecd9c8}
+.price-figures dd{display:flex;align-items:baseline;gap:5px;white-space:nowrap}
+.price-figures strong{font-family:"Manrope",sans-serif;font-size:3.4rem;line-height:1.5;letter-spacing:-.03em}
+.price-figures dd>span{font-weight:700;font-size:1.1rem}
+.price-figures small{font-size:.78rem;color:#ecd9c8}
+.estimate-guide{max-width:900px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1.2fr;gap:24px 38px;padding:32px;background:#fff;border:1px solid var(--line);border-radius:var(--radius)}
+.estimate-guide .tag{font-size:.7rem;margin-bottom:10px}
+.estimate-guide h3{font-size:1.25rem;line-height:1.6}
+.estimate-guide p{font-size:.85rem;color:var(--muted);margin-top:14px}
+.estimate-list{list-style:none}
+.estimate-list li{padding:10px 0;border-bottom:1px solid var(--line)}
+.estimate-list li:first-child{padding-top:0}
+.estimate-list strong,.estimate-list span{display:block}
+.estimate-list strong{font-size:.85rem}
+.estimate-list span{font-size:.8rem;color:var(--muted);margin-top:3px}
+.estimate-guide .btn{grid-column:1/-1;justify-self:center;white-space:normal;text-align:center}
+a:focus-visible{outline:3px solid var(--brand-2);outline-offset:5px}
+@media(min-width:1101px){
+  .home-header .header-inner{gap:14px}
+  .home-header .nav{gap:14px;margin-left:0}
+  .home-header .nav a{font-size:.8rem;white-space:nowrap}
+  .home-header .header-actions .btn{padding:10px 14px;font-size:.8rem}
+  .home-header .brand-logo{height:32px}
+}
+@media(max-width:960px){
+  .fit-grid{grid-template-columns:1fr}
+  .fit-card{padding:26px}
+  .fit-card h3 br{display:none}
+  .workflow-layout{gap:30px}
+}
+@media(max-width:640px){
+  .industry-grid,.workflow-layout,.estimate-guide{grid-template-columns:1fr}
+  .industry-card,.output-sample{padding:24px}
+  .industry-heading{margin-top:38px}
+  .workflow-story blockquote{font-size:1.05rem}
+  .workflow-story blockquote br{display:none}
+  .pricing-overview{flex-direction:column;align-items:stretch;padding:28px 24px;gap:24px}
+  .pricing-copy p br{display:none}
+  .price-figures{gap:28px;justify-content:space-between}
+  .price-figures strong{font-size:3rem}
+  .estimate-guide{padding:24px}
+  .guide-cta .btn{white-space:normal;text-align:center}
+  .decision-links{gap:12px;font-size:.78rem}
+}
