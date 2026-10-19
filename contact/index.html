@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NRPP5L7K');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="../image/favicon.png" />
+  <link rel="apple-touch-icon" href="../image/favicon.png" />
+  <title>お問い合わせ｜アポカル</title>
+  <meta name="description" content="アポカルへのお問い合わせはこちらから。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="contact-page">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRPP5L7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="site-header contact-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="アポカル ホームへ戻る">
+        <img src="../image/apocal_logo_3.png" alt="アポカル" class="brand-logo">
+      </a>
+      <a href="/" class="btn btn-ghost"><i class="material-icons-round">arrow_back</i>サイトへ戻る</a>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <section class="contact-hero">
+      <div class="container contact-hero-inner">
+        <span class="contact-kicker">CONTACT</span>
+        <h1>お問い合わせ</h1>
+        <p>ご相談・ご質問は、以下のフォームからお寄せください。</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-layout">
+        <form class="contact-form" id="contactForm">
+          <div class="form-heading">
+            <span>STEP 01</span>
+            <h2>お問い合わせ内容を入力</h2>
+            <p><b>お問い合わせ内容</b>以外はすべて必須項目です。</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">氏名 <span aria-hidden="true">必須</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="例：田中 太郎" required />
+            </div>
+            <div class="form-field">
+              <label for="email">ビジネスメール <span aria-hidden="true">必須</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="例：taro@apocal.jp" required />
+            </div>
+            <div class="form-field">
+              <label for="company">会社名 <span aria-hidden="true">必須</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">電話番号 <span aria-hidden="true">必須</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="例：03-1234-5678" required />
+            </div>
+            <div class="form-field">
+              <label for="department">部署 <span aria-hidden="true">必須</span></label>
+              <select id="department" name="department" required>
+                <option value="" selected disabled>選択してください</option>
+                <option value="営業">営業</option>
+                <option value="マーケ">マーケ</option>
+                <option value="情報システム">情報システム</option>
+                <option value="経営企画">経営企画</option>
+                <option value="管理">管理</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="position">役職 <span aria-hidden="true">必須</span></label>
+              <select id="position" name="position" required>
+                <option value="" selected disabled>選択してください</option>
+                <option value="一般">一般</option>
+                <option value="主任/リーダー">主任/リーダー</option>
+                <option value="課長">課長</option>
+                <option value="部長">部長</option>
+                <option value="役員">役員</option>
+                <option value="代表">代表</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field form-field-wide">
+            <label for="message">お問い合わせ内容</label>
+            <textarea id="message" name="message" rows="6" placeholder="ご相談内容をご記入ください。"></textarea>
+          </div>
+
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="website">Webサイト</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <button class="btn btn-primary btn-lg form-submit" type="submit" id="formSubmit"><i class="material-icons-round">send</i>内容を送信する<i class="material-icons-round">arrow_forward</i></button>
+        </form>
+
+        <aside class="contact-aside">
+          <div class="aside-top">
+            <span class="aside-label">APOCAL CONTACT</span>
+            <h2>まずは現状を<br />お聞かせください。</h2>
+            <p>課題がまだ明確でなくても大丈夫です。事業の現在地から、一緒に最初の一歩を考えます。</p>
+          </div>
+          <ul class="contact-points">
+            <li><i class="material-icons-round">schedule</i><div><b>ご回答の目安</b><span>通常2〜3営業日以内</span></div></li>
+            <li><i class="material-icons-round">forum</i><div><b>ご相談内容</b><span>導入検討・課題整理・機能のご質問</span></div></li>
+            <li><i class="material-icons-round">shield</i><div><b>お預かりする情報</b><span>お問い合わせ対応のために利用します</span></div></li>
+          </ul>
+          <div class="aside-bottom"><i class="material-icons-round">bolt</i><span>集客から受注まで、<br />成長を止めない仕組みを。</span></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer contact-footer">
+    <div class="container footer-bottom"><span>&copy; 2026 APOCAL</span><a href="/">APOCAL TOP <i class="material-icons-round">north_east</i></a></div>
+  </footer>
+
+  <script src="../js/contact.js"></script>
+</body>
+</html>
