@@ -119,4 +119,24 @@ a:focus-visible{outline:3px solid var(--brand-2);outline-offset:5px}
 @media(max-width:960px){.agent-plan-layout{gap:30px}.agent-plan-layout .plan-card{padding:30px 24px}.agent-plan-price{gap:24px}}
 @media(max-width:760px){.agent-plan-layout{grid-template-columns:1fr;gap:42px}.agent-comparison-table{font-size:.8rem}.agent-comparison-table th,.agent-comparison-table td{padding:18px 12px}.agent-comparison-table thead th{font-size:.76rem}.agent-comparison-table th:first-child{width:22%}.agent-plan-price{justify-content:space-between}.agent-onboarding{padding:0 4px}}
 
-.fit-card .fit-impact{margin-top:auto;margin-bottom:0;color:var(--brand-2);font-size:.95rem;font-weight:700;line-height:1.8}
+/* Quiet labels and prominent numbers keep the outcome easy to compare. */
+.fit-impact{margin-top:auto;padding:28px 0 4px;border-top:1px solid var(--line);text-align:center}
+.fit-impact-label{display:block;color:var(--muted);font-size:.75rem;font-weight:500;line-height:1.6;letter-spacing:.02em}
+.fit-impact-value{display:flex;justify-content:center;align-items:baseline;gap:6px;height:120px;padding:26px 0 10px;color:var(--brand-2);font-family:"Manrope",sans-serif;white-space:nowrap;line-height:1}
+.fit-impact-value strong{font-size:clamp(3.6rem,5.7vw,4.6rem);font-weight:500;letter-spacing:-.055em;line-height:1}
+.fit-impact-value small{font-family:"Noto Sans JP",sans-serif;font-size:.8rem;font-weight:500;margin-left:4px;letter-spacing:0}
+.fit-impact-unit{font-size:1.8rem;font-weight:500}
+.fit-impact-up{margin-left:8px;font-size:.78rem;font-weight:600;letter-spacing:.06em}
+.fit-impact-change{align-items:flex-end;gap:18px}
+.fit-impact-before{align-self:center;color:var(--muted);font-size:1.6rem;font-weight:400;letter-spacing:-.03em}
+.fit-impact-arrow{align-self:center;color:#b4a79d;font-size:1.2rem;font-weight:400}
+.fit-impact-after{display:flex;flex-direction:column;align-items:center;gap:5px}
+.fit-impact-average{font-family:"Noto Sans JP",sans-serif;font-size:.65rem;font-weight:400;letter-spacing:.06em;color:var(--muted)}
+@media(min-width:961px){.fit-card{padding-left:24px;padding-right:24px}}
+@media(max-width:960px){.fit-impact-value strong{font-size:4.6rem}}
+@media(max-width:380px){.fit-impact-value strong{font-size:3.8rem}.fit-impact-change{gap:14px}}
+
+.fit-impact-note{margin-top:20px;color:var(--muted);font-size:.78rem;text-align:right;line-height:1.8}
+
+.comparison-illustration{display:block;width:100%;max-width:248px;height:auto;margin:0 auto 18px}
+@media(max-width:760px){.comparison-illustration{margin-bottom:12px}}
