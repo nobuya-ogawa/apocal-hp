@@ -118,3 +118,5 @@ a:focus-visible{outline:3px solid var(--brand-2);outline-offset:5px}
 #solution{scroll-margin-top:96px}
 @media(max-width:960px){.agent-plan-layout{gap:30px}.agent-plan-layout .plan-card{padding:30px 24px}.agent-plan-price{gap:24px}}
 @media(max-width:760px){.agent-plan-layout{grid-template-columns:1fr;gap:42px}.agent-comparison-table{font-size:.8rem}.agent-comparison-table th,.agent-comparison-table td{padding:18px 12px}.agent-comparison-table thead th{font-size:.76rem}.agent-comparison-table th:first-child{width:22%}.agent-plan-price{justify-content:space-between}.agent-onboarding{padding:0 4px}}
+
+.fit-card .fit-impact{margin-top:auto;margin-bottom:0;color:var(--brand-2);font-size:.95rem;font-weight:700;line-height:1.8}
