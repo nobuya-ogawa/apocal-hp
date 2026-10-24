@@ -29,3 +29,33 @@
 /* Keep the single circle as large as the other comparison symbols. */
 .em-rating-circle{width:1em;height:1.4em;display:inline-flex;align-items:center;justify-content:center;vertical-align:bottom}
 .em-rating-circle svg{display:block;width:1em;height:1em;overflow:visible}
+
+/* Add a readable Japanese product name and enlarge the surrounding navigation. */
+.em-header .em-wordmark { font-size:48px; }
+.em-footer .em-wordmark { font-size:45px; }
+.em-wordmark .em-name-reading { font:500 16px/1.5 "Noto Sans JP",sans-serif; letter-spacing:0; margin-left:3px; white-space:nowrap; }
+.em-nav { font-size:14px; }
+.em-nav .em-nav-trial { font-size:14px; }
+.em-footer-bottom { font-size:11px; }
+.em-footer-bottom>a { font-size:11px; }
+.em-apocal-link { font-size:12px; }
+.em-apocal-link img { height:32px; }
+@media(max-width:1000px) and (min-width:761px) {
+  .em-header-inner { gap:20px; }
+  .em-nav { gap:18px; font-size:12px; }
+  .em-nav .em-nav-trial { font-size:12px; padding:11px 14px; gap:12px; }
+  .em-header .em-wordmark { font-size:42px; }
+  .em-wordmark .em-name-reading { font-size:14px; }
+}
+@media(max-width:760px) {
+  .em-header .em-wordmark { font-size:40px; }
+  .em-footer .em-wordmark { font-size:40px; }
+  .em-wordmark .em-name-reading { font-size:14px; }
+  .em-nav { font-size:14px; }
+  .em-footer-bottom { font-size:10px; }
+  .em-footer-bottom>a { font-size:10px; }
+  .em-apocal-link img { height:30px; }
+}
+@media(max-width:560px) {
+  .em-footer-main { flex-wrap:wrap; gap:24px; }
+}

@@ -1623,3 +1623,24 @@ button[hidden],[hidden] {
   .mission-description br { display:none; }
   .products { padding-bottom:64px; }
 }
+
+/* Improve navigation and footer legibility without changing page content. */
+.wordmark img { width:174px; height:35px; }
+.home-nav { font-size:14px; }
+.footer-main>p { font-size:12px; }
+.footer-main nav { font-size:13px; }
+.home-footer .footer-bottom { font-size:11px; }
+@media(min-width:801px) and (max-width:1100px) {
+  .header-inner { gap:20px; }
+  .home-nav { font-size:12px; gap:16px; }
+  .home-header .wordmark img { width:160px; height:32px; }
+}
+@media(max-width:800px) {
+  .wordmark img { width:148px; height:30px; }
+  .home-nav { font-size:16px; }
+}
+@media(max-width:560px) {
+  .footer-main>p { font-size:11px; }
+  .footer-main nav { font-size:12px; }
+  .home-footer .footer-bottom { font-size:10px; }
+}
