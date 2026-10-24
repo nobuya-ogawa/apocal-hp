@@ -245,35 +245,61 @@
 
     <section class="section use-case" id="use-case" aria-labelledby="useCaseHeading">
       <div class="container">
-        <div class="section-head center">
+        <div class="section-head center use-case-video-head">
           <span class="tag">USE CASE</span>
-          <h2 id="useCaseHeading">「サイトに何を足すべき？」を、<br />具体的な改善案に。</h2>
-          <p class="section-desc">チャットの相談内容から、見込み客が知りたい情報を整理するケース。相談から成果物までのイメージをご紹介します。</p>
+          <h2 id="useCaseHeading">レポーティングから顧客情報確認、<br />施策実装まで可能性は無限大</h2>
+          <p class="section-desc">アポカルのコアは質の高い顧客の生データを自動収集できることにあります。これを最新AIの頭脳と接続することでオンライン上のすべてのセールスアンドマーケ活動に変化をもたらします。</p>
         </div>
-        <div class="workflow-layout">
-          <div class="workflow-story">
-            <p class="example-label">活用イメージ / サイト改善</p>
-            <blockquote>「料金や対応業種の質問が届きます。<br />サイトにどんな情報を追加すればよいですか？」</blockquote>
-            <ol class="workflow-steps">
-              <li><h3>相談・情報の共有</h3><p>現在のサイトと、利用できるチャットの相談内容を確認します。</p></li>
-              <li><h3>知りたい情報を整理</h3><p>料金・対象業種・利用体制などの関心を分類し、サイトにある情報と照合します。</p></li>
-              <li><h3>改善案・掲載文案を作成</h3><p>追加する情報と掲載位置を提案。優先順位と、FAQなどの文案をまとめます。</p></li>
-              <li><h3>内容を確認して反映・検証</h3><p>料金・対応範囲などの事実を確認し、合意した範囲でサイトを改修。公開後は取得できる閲覧・問い合わせデータで変化を確認します。</p></li>
-            </ol>
+        <div class="use-case-flow" aria-label="アポカルの活用の流れ">
+          <button type="button" class="use-case-step is-active" data-use-case-stage="collect" aria-pressed="true"><span class="use-case-step-number">01</span><span>集める</span><small>チャットで顧客を知る</small></button>
+          <button type="button" class="use-case-step" data-use-case-stage="execute" aria-pressed="false"><span class="use-case-step-number">02</span><span>実行する</span><small>Web改修・広告制作</small></button>
+          <button type="button" class="use-case-step" data-use-case-stage="verify" aria-pressed="false"><span class="use-case-step-number">03</span><span>検証する</span><small>レポートで振り返る</small></button>
+        </div>
+        <div class="use-case-showcase">
+          <div class="use-case-tabs" role="tablist" aria-label="活用例の動画">
+            <button type="button" role="tab" id="use-case-tab-1" aria-controls="use-case-panel-1" aria-selected="true" tabindex="0" data-use-case-stage="collect">チャットボットでの対話</button>
+            <button type="button" role="tab" id="use-case-tab-2" aria-controls="use-case-panel-2" aria-selected="false" tabindex="-1" data-use-case-stage="execute">ホームページ改修</button>
+            <button type="button" role="tab" id="use-case-tab-3" aria-controls="use-case-panel-3" aria-selected="false" tabindex="-1" data-use-case-stage="execute">広告クリエイティブ制作</button>
+            <button type="button" role="tab" id="use-case-tab-4" aria-controls="use-case-panel-4" aria-selected="false" tabindex="-1" data-use-case-stage="verify">経営層向けのマーケレポート作成</button>
           </div>
-          <aside class="output-sample" aria-label="成果物のサンプル">
-            <div class="output-head"><i class="material-icons-round" aria-hidden="true">description</i><span>成果物サンプル</span><span class="sample-mark">イメージ</span></div>
-            <h3>サイト改善提案</h3>
-            <p class="output-caption">チャットの関心 → 追加情報 → 掲載文案</p>
-            <dl class="guide-details">
-              <div><dt>見えてきた関心</dt><dd>「自社の業種で使えるか」「導入費用を知りたい」</dd></div>
-              <div><dt>優先して追加する情報</dt><dd>① 業種別の想定活用例<br />② 料金と相談時の確認事項<br />③ 相談から成果物までの流れ</dd></div>
-              <div><dt>FAQの掲載文案例</dt><dd><strong>Q. 製造業でも使えますか？</strong><br />A. 製品ページの改善や展示会後のフォローなど、商材・営業プロセスに応じた活用方法をご相談いただけます。</dd></div>
-            </dl>
-            <p class="sample-footnote">提供する成果物や実行範囲は、プランとご相談内容に応じて決定します。</p>
-          </aside>
+          <div class="use-case-panel" role="tabpanel" id="use-case-panel-1" aria-labelledby="use-case-tab-1" tabindex="0">
+            <div class="use-case-panel-copy"><h3 id="use-case-video-1">チャットボットでの対話</h3><p>顧客との対話から、ニーズや検討中の悩みを集めます。</p></div>
+            <div class="use-case-video-frame">
+              <video controls playsinline preload="none" poster="/video/agent/chatbot-dialogue.jpg" width="1280" height="960" aria-labelledby="use-case-video-1">
+                <source src="/video/agent/chatbot-dialogue.mp4" type="video/mp4" />
+                <p>動画を再生できない場合は、<a href="/video/agent/chatbot-dialogue.mp4">チャットボットでの対話の動画を開く</a>をご利用ください。</p>
+              </video>
+            </div>
+          </div>
+          <div class="use-case-panel" role="tabpanel" id="use-case-panel-2" aria-labelledby="use-case-tab-2" tabindex="0" hidden>
+            <div class="use-case-panel-copy"><h3 id="use-case-video-2">ホームページ改修</h3><p>集めた顧客の声をもとに、ホームページの改善を進めます。</p></div>
+            <div class="use-case-video-frame">
+              <video controls playsinline preload="none" poster="/video/agent/website-improvement.jpg" width="1280" height="960" aria-labelledby="use-case-video-2">
+                <source src="/video/agent/website-improvement.mp4" type="video/mp4" />
+                <p>動画を再生できない場合は、<a href="/video/agent/website-improvement.mp4">ホームページ改修の動画を開く</a>をご利用ください。</p>
+              </video>
+            </div>
+          </div>
+          <div class="use-case-panel" role="tabpanel" id="use-case-panel-3" aria-labelledby="use-case-tab-3" tabindex="0" hidden>
+            <div class="use-case-panel-copy"><h3 id="use-case-video-3">広告クリエイティブ制作</h3><p>顧客の関心を捉え、広告クリエイティブの制作につなげます。</p></div>
+            <div class="use-case-video-frame">
+              <video controls playsinline preload="none" poster="/video/agent/ad-creative.jpg" width="1280" height="960" aria-labelledby="use-case-video-3">
+                <source src="/video/agent/ad-creative.mp4" type="video/mp4" />
+                <p>動画を再生できない場合は、<a href="/video/agent/ad-creative.mp4">広告クリエイティブ制作の動画を開く</a>をご利用ください。</p>
+              </video>
+            </div>
+          </div>
+          <div class="use-case-panel" role="tabpanel" id="use-case-panel-4" aria-labelledby="use-case-tab-4" tabindex="0" hidden>
+            <div class="use-case-panel-copy"><h3 id="use-case-video-4">経営層向けのマーケレポート作成</h3><p>蓄積したデータをレポートにまとめ、施策の振り返りや次の判断に活かします。</p></div>
+            <div class="use-case-video-frame">
+              <video controls playsinline preload="none" poster="/video/agent/marketing-report.jpg" width="1280" height="960" aria-labelledby="use-case-video-4">
+                <source src="/video/agent/marketing-report.mp4" type="video/mp4" />
+                <p>動画を再生できない場合は、<a href="/video/agent/marketing-report.mp4">経営層向けのマーケレポート作成の動画を開く</a>をご利用ください。</p>
+              </video>
+            </div>
+          </div>
         </div>
-        <div class="guide-cta"><a href="/contact/" class="btn btn-outline">自社の課題から相談する <i class="material-icons-round" aria-hidden="true">arrow_forward</i></a></div>
+        <div class="use-case-contact"><a href="/contact/" class="btn btn-primary btn-lg">お問い合わせはこちら <span aria-hidden="true">→</span></a></div>
       </div>
     </section>
 
@@ -492,6 +518,7 @@
     <div class="service-footer-bottom"><span>&copy; 2026 APOCAL</span><a href="#top">ページの先頭へ <span aria-hidden="true">↑</span></a></div>
   </footer>
 
+  <script src="/js/agent-use-case.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>
