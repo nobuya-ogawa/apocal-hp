@@ -5,7 +5,26 @@
       "firebase.json",
       "apps-script/**",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "**/*debug.log",
+      "**/*debug.*.log"
+    ],
+    "redirects": [
+      {
+        "source": "/member",
+        "destination": "/consulting/",
+        "type": 301
+      },
+      {
+        "source": "/member/",
+        "destination": "/consulting/",
+        "type": 301
+      },
+      {
+        "source": "/member/index.html",
+        "destination": "/consulting/",
+        "type": 301
+      }
     ]
   }
 }
