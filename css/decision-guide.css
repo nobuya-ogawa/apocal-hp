@@ -137,3 +137,6 @@ a:focus-visible{outline:3px solid var(--brand-2);outline-offset:5px}
 @media(max-width:380px){.fit-impact-value strong{font-size:3.8rem}.fit-impact-change{gap:14px}}
 
 .fit-impact-note{margin-top:20px;color:var(--muted);font-size:.78rem;text-align:right;line-height:1.8}
+
+.comparison-illustration{display:block;width:100%;max-width:248px;height:auto;margin:0 auto 18px}
+@media(max-width:760px){.comparison-illustration{margin-bottom:12px}}
