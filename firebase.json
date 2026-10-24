@@ -7,7 +7,9 @@
       "**/.*",
       "**/node_modules/**",
       "**/*debug.log",
-      "**/*debug.*.log"
+      "**/*debug.*.log",
+      "scripts/**",
+      "tests/**"
     ],
     "redirects": [
       {
@@ -25,6 +27,9 @@
         "destination": "/consulting/",
         "type": 301
       }
+    ],
+    "predeploy": [
+      "node \"$PROJECT_DIR/scripts/check-agent-chatbot.mjs\""
     ]
   }
 }
