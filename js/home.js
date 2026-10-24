@@ -25,9 +25,6 @@
       }
     });
   });
-  document.querySelectorAll('[data-product-link]').forEach(link => {
-    link.addEventListener('click', () => selectProduct(link.dataset.productLink));
-  });
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.getElementById('homeNav');
   const closeMenu = () => {
