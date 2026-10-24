@@ -139,13 +139,13 @@ button[hidden],[hidden] {
   position:absolute;
   left:50%;
   top:70%;
-  width:clamp(620px,74vw,1120px);
+  width:clamp(800px,94vw,1440px);
   aspect-ratio:1.15;
   transform:translate(-50%,-50%);
   background:
-    radial-gradient(ellipse at 48% 43%,rgba(255,153,64,.64),rgba(237,99,27,.32) 22%,transparent 53%),
-    radial-gradient(ellipse at 52% 52%,#e76620 0%,rgba(197,64,11,.72) 17%,rgba(127,37,5,.4) 33%,rgba(63,19,5,.17) 48%,transparent 69%);
-  filter:blur(36px);
+    radial-gradient(ellipse at 48% 43%,rgba(255,153,64,.7),rgba(237,99,27,.4) 28%,transparent 53%),
+    radial-gradient(ellipse at 52% 52%,#ee762a 0%,rgba(219,83,16,.86) 24%,rgba(142,42,5,.5) 39%,rgba(65,19,5,.12) 50%,transparent 63%);
+  filter:blur(26px);
   opacity:.92;
   animation:ambient-breathe 18s ease-in-out infinite alternate;
   will-change:transform;
@@ -1156,9 +1156,9 @@ button[hidden],[hidden] {
     margin-top:22px;
   }
   .ambient-glow {
-    width:650px;
+    width:830px;
     top:65%;
-    filter:blur(32px);
+    filter:blur(22px);
   }
   .hero-bottom {
     left:22px;
