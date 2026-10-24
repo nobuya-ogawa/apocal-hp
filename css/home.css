@@ -132,32 +132,26 @@ button[hidden],[hidden] {
   position:absolute;
   inset:0;
   z-index:-1;
-  background:radial-gradient(ellipse at 50% 69%,#281005 0,transparent 47%),#030303;
+  background:#050505;
 }
-.hero-universe canvas {
-  height:100%;
-  width:100%;
-  display:block;
-  opacity:0;
-  transition:opacity 1s;
-}
-.hero-universe.is-ready canvas {
-  opacity:1;
-}
-.hero-universe.is-ready .sun-fallback {
-  opacity:0;
-}
-.sun-fallback {
+/* A diffused light field: no solid disc or recognizable solar surface. */
+.ambient-glow {
   position:absolute;
   left:50%;
-  top:70.5%;
-  width:390px;
-  aspect-ratio:1;
+  top:70%;
+  width:clamp(620px,74vw,1120px);
+  aspect-ratio:1.15;
   transform:translate(-50%,-50%);
-  border-radius:50%;
-  background:radial-gradient(circle at 40% 35%,#ffd59c,#ffaf45 20%,#ff681b 60%,#e43f0c 85%,#ffb967 98%);
-  box-shadow:0 0 20px #ffb22c,0 0 85px #f65a17,0 0 150px #7a200c;
-  transition:opacity 1s;
+  background:
+    radial-gradient(ellipse at 48% 43%,rgba(255,153,64,.64),rgba(237,99,27,.32) 22%,transparent 53%),
+    radial-gradient(ellipse at 52% 52%,#e76620 0%,rgba(197,64,11,.72) 17%,rgba(127,37,5,.4) 33%,rgba(63,19,5,.17) 48%,transparent 69%);
+  filter:blur(36px);
+  opacity:.92;
+  animation:ambient-breathe 18s ease-in-out infinite alternate;
+  will-change:transform;
+}
+@keyframes ambient-breathe {
+  to { transform:translate(-49%,-51%) scale(1.07); opacity:.78; }
 }
 .hero-vignette {
   position:absolute;
@@ -1161,9 +1155,10 @@ button[hidden],[hidden] {
     letter-spacing:.05em;
     margin-top:22px;
   }
-  .sun-fallback {
-    width:285px;
-    top:64%;
+  .ambient-glow {
+    width:650px;
+    top:65%;
+    filter:blur(32px);
   }
   .hero-bottom {
     left:22px;
@@ -1426,9 +1421,42 @@ button[hidden],[hidden] {
     opacity:1;
   }
 }
-.wordmark img,.agent-core img {
-  filter:grayscale(1) invert(1) brightness(3);
+/* Use the original transparent orange wordmark. */
+.wordmark img {
+  width:139px;
+  height:28px;
+  object-fit:contain;
+}
+.agent-core {
+  background:linear-gradient(145deg,#27190f,#17100c);
+  box-shadow:0 0 44px #e8552429,inset 0 1px 8px #ffa66c15;
+}
+.agent-core img {
+  filter:invert(1) hue-rotate(180deg);
   mix-blend-mode:screen;
+}
+.hero-brand,
+.hero-copy h1,
+.section-heading h2,
+.product-intro h3,
+.tile-heading h3,
+.contact-copy h2,
+.product-metrics strong,
+.experience p {
+  font-family:"Noto Serif JP",serif;
+  font-weight:500;
+}
+.hero-copy h1 span {
+  font-weight:inherit;
+}
+.hero-copy h1,
+.section-heading h2,
+.product-intro h3,
+.contact-copy h2 {
+  letter-spacing:-.025em;
+}
+@media(max-width:800px) {
+  .wordmark img { width:126px; height:26px; }
 }
 
 /* Keep the whole solar sphere in view on laptop screens. */
