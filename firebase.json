@@ -6,6 +6,23 @@
       "apps-script/**",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/member",
+        "destination": "/consulting/",
+        "type": 301
+      },
+      {
+        "source": "/member/",
+        "destination": "/consulting/",
+        "type": 301
+      },
+      {
+        "source": "/member/index.html",
+        "destination": "/consulting/",
+        "type": 301
+      }
     ]
   }
 }
