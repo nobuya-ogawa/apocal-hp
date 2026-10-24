@@ -89,3 +89,32 @@ a:focus-visible{outline:3px solid var(--brand-2);outline-offset:5px}
   .guide-cta .btn{white-space:normal;text-align:center}
   .decision-links{gap:12px;font-size:.78rem}
 }
+
+/* Agent page: comparison and accompanied onboarding. */
+.agent-comparison{background:var(--bg-soft)}
+.comparison-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.agent-comparison-table{width:100%;border-collapse:collapse;text-align:left;line-height:1.8;font-size:.92rem}
+.agent-comparison-table th,.agent-comparison-table td{padding:24px;border-bottom:1px solid var(--line);vertical-align:top;width:38%}
+.agent-comparison-table th:first-child{width:24%}
+.agent-comparison-table thead th{font-size:.88rem;background:#f3eee9}
+.agent-comparison-table tr>:last-child{background:#fff3e9}
+.agent-comparison-table thead th:last-child{background:var(--brand);color:#fff}
+.agent-comparison-table tbody tr:last-child>*{border-bottom:0}
+.comparison-note{font-size:.76rem;color:var(--muted);margin-top:18px;line-height:1.9}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.agent-plan-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;max-width:1060px;margin:auto;align-items:start}
+.agent-plan-layout .plan-card{padding:38px 32px}
+.agent-plan-price{display:flex;gap:40px;padding:24px 0;margin:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.agent-plan-price dt{font-size:.8rem;color:var(--muted)}
+.agent-plan-price dd{font-weight:700;white-space:nowrap}
+.agent-plan-price strong{font-family:Manrope,sans-serif;font-size:3rem;letter-spacing:-.04em;margin-right:5px}
+.agent-plan-price dd span{font-weight:400;font-size:.8rem;color:var(--muted)}
+.agent-plan-layout .btn{white-space:normal;text-align:center}
+.agent-onboarding{padding-top:8px}
+.agent-onboarding>h3{font-size:1.35rem;margin-bottom:30px}
+.agent-onboarding h4{font-size:1rem;padding-top:5px;margin-bottom:6px}
+.agent-onboarding .workflow-steps li:last-child{padding-bottom:0}
+.onboarding-note{font-size:.78rem;color:var(--muted);margin-top:24px;line-height:1.8}
+#solution{scroll-margin-top:96px}
+@media(max-width:960px){.agent-plan-layout{gap:30px}.agent-plan-layout .plan-card{padding:30px 24px}.agent-plan-price{gap:24px}}
+@media(max-width:760px){.agent-plan-layout{grid-template-columns:1fr;gap:42px}.agent-comparison-table{font-size:.8rem}.agent-comparison-table th,.agent-comparison-table td{padding:18px 12px}.agent-comparison-table thead th{font-size:.76rem}.agent-comparison-table th:first-child{width:22%}.agent-plan-price{justify-content:space-between}.agent-onboarding{padding:0 4px}}
