@@ -1644,3 +1644,10 @@ button[hidden],[hidden] {
   .footer-main nav { font-size:12px; }
   .home-footer .footer-bottom { font-size:10px; }
 }
+
+/* Match the accuracy figure to the adjacent latency figure. */
+.translate-panel .product-metrics{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.product-stats .accuracy-rate{padding-top:0;padding-bottom:0}
+.product-stats .accuracy-rate strong{font-family:"Noto Serif JP",serif;font-size:65px;line-height:1.5;letter-spacing:-.07em}
+@media(min-width:801px) and (max-width:1100px){.product-stats .accuracy-rate strong{font-size:56px}}
+@media(max-width:560px){.product-stats .accuracy-rate strong{font-size:52px}}
