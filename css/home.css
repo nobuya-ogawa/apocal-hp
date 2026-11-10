@@ -1761,6 +1761,51 @@ button[hidden],[hidden] {
   font-size: 10px;
 }
 
+.home-call-ai {
+  margin-bottom: 8px;
+  padding: clamp(8px, 1.25vw, 14px);
+  border: 1px solid #ead0bf;
+  border-radius: 8px;
+  background: #fff7f1;
+}
+
+.home-call-ai h4,
+.home-call-console-detail h4 {
+  margin: 0;
+  font-size: clamp(10px, 1.1vw, 13px);
+}
+
+.home-call-dialogue {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 8px 0 0;
+}
+
+.home-call-dialogue > div {
+  padding: 7px 9px;
+  border: 1px solid #ead9cc;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.home-call-dialogue > div:last-child {
+  border-color: #f0d1bc;
+  background: #ffeadc;
+}
+
+.home-call-dialogue dt {
+  color: #89411f;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.home-call-dialogue dd {
+  margin: 3px 0 0;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .home-call-metrics,
 .home-call-console-detail {
   display: grid;
@@ -1806,11 +1851,6 @@ button[hidden],[hidden] {
   grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
 }
 
-.home-call-console-detail h4 {
-  margin: 0;
-  font-size: clamp(10px, 1.1vw, 13px);
-}
-
 .home-call-chart svg {
   display: block;
   width: 100%;
@@ -1830,6 +1870,11 @@ button[hidden],[hidden] {
   color: #206747;
   font-size: 9px;
   font-weight: 700;
+}
+
+.home-call-assist-heading > .home-call-ai-status {
+  background: #f9dfcd;
+  color: #843717;
 }
 
 .home-call-assist-question {
@@ -1886,6 +1931,10 @@ button[hidden],[hidden] {
 
   .home-call-console-bar {
     padding: 10px 12px;
+  }
+
+  .home-call-dialogue {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .home-call-chart-axis {
