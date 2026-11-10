@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=Noto+Serif+JP:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/home.css?v=call-dashboard">
+  <link rel="stylesheet" href="/css/home.css?v=call-ai-conversation">
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NRPP5L7K');</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://apocal.jp/#organization","name":"アポカル","alternateName":"APOCAL","url":"https://apocal.jp/","description":"社会に先端技術を実装する、AIの専門商社","logo":"https://apocal.jp/image/apocal_logo_3.png"}</script>
 </head>
@@ -72,6 +72,16 @@
               <h3>運用ダッシュボード</h3>
               <span>今日の応対</span>
             </div>
+            <section class="home-call-ai" aria-labelledby="call-ai-heading">
+              <div class="home-call-assist-heading">
+                <h4 id="call-ai-heading">AIオペレーター</h4>
+                <span class="home-call-ai-status">AIが一次対応中</span>
+              </div>
+              <dl class="home-call-dialogue">
+                <div><dt>お客様</dt><dd>「引っ越したので、登録住所を変更したいです」</dd></div>
+                <div><dt>AIオペレーター</dt><dd>「住所変更ですね。まず、ご本人確認をさせてください」</dd></div>
+              </dl>
+            </section>
             <dl class="home-call-metrics">
               <div><dt>総応対数</dt><dd>128<span>件</span></dd></div>
               <div><dt>AI初期対応</dt><dd>42<span>件</span></dd></div>
@@ -95,11 +105,11 @@
               </section>
               <section class="home-call-assist" aria-labelledby="call-assist-heading">
                 <div class="home-call-assist-heading">
-                  <h4 id="call-assist-heading">応対アシスト</h4>
-                  <span>通話中</span>
+                  <h4 id="call-assist-heading">有人応対アシスト</h4>
+                  <span>担当者を支援</span>
                 </div>
-                <p class="home-call-assist-question">「登録住所を変更したい」</p>
-                <p class="home-call-assist-answer"><span>マニュアル候補</span>本人確認・住所変更の手順</p>
+                <p class="home-call-assist-question">「契約プランを確認したい」</p>
+                <p class="home-call-assist-answer"><span>マニュアル候補</span>契約内容の確認・案内手順</p>
               </section>
             </div>
             <div class="home-call-coaching">
