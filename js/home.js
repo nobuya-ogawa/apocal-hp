@@ -1,30 +1,5 @@
 (() => {
   'use strict';
-  const tabs = [...document.querySelectorAll('[role="tab"]')];
-  const panels = [...document.querySelectorAll('[role="tabpanel"]')];
-  function selectProduct(name, focus = false) {
-    tabs.forEach((tab, index) => {
-      const selected = tab.id === `tab-${name}`;
-      tab.setAttribute('aria-selected', String(selected));
-      tab.tabIndex = selected ? 0 : -1;
-      panels[index].hidden = !selected;
-      panels[index].classList.toggle('is-changing', selected);
-      if (selected && focus) tab.focus();
-    });
-  }
-  tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => selectProduct(tab.id.replace('tab-', '')));
-    tab.addEventListener('keydown', event => {
-      let next;
-      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') next = (index + 1) % tabs.length;
-      if (event.key === 'Home') next = 0;
-      if (event.key === 'End') next = tabs.length - 1;
-      if (next !== undefined) {
-        event.preventDefault();
-        selectProduct(tabs[next].id.replace('tab-', ''), true);
-      }
-    });
-  });
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.getElementById('homeNav');
   const closeMenu = () => {

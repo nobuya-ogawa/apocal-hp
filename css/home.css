@@ -308,7 +308,7 @@ button[hidden],[hidden] {
   letter-spacing:-.05em;
   margin-left:4px;
 }
-.product-intro h3 {
+.product-intro h2 {
   font-size:clamp(30px,3.6vw,49px);
   font-weight:700;
   line-height:1.5;
@@ -1015,7 +1015,7 @@ button[hidden],[hidden] {
   .section-heading>p:last-child {
     font-size:12px;
   }
-  .product-intro h3 {
+  .product-intro h2 {
     font-size:42px;
   }
   .solution-grid {
@@ -1178,7 +1178,7 @@ button[hidden],[hidden] {
   .translate-word {
     font-size:20px;
   }
-  .product-intro h3 {
+  .product-intro h2 {
     font-size:31px;
     margin-top:19px;
     line-height:1.65;
@@ -1414,7 +1414,7 @@ button[hidden],[hidden] {
 .hero-brand,
 .hero-copy h1,
 .section-heading h2,
-.product-intro h3,
+.product-intro h2,
 .tile-heading h3,
 .contact-copy h2,
 .product-metrics strong {
@@ -1426,7 +1426,7 @@ button[hidden],[hidden] {
 }
 .hero-copy h1,
 .section-heading h2,
-.product-intro h3,
+.product-intro h2,
 .contact-copy h2 {
   letter-spacing:-.025em;
 }
@@ -1610,7 +1610,7 @@ button[hidden],[hidden] {
   .product-tabs button { padding:10px 29px; }
   .product-name { font-size:23px; }
   .translate-word { font-size:20px; }
-  .product-intro h3 { font-size:38px; line-height:1.4; margin-top:12px; }
+  .product-intro h2 { font-size:38px; line-height:1.4; margin-top:12px; }
   .product-description { font-size:12px; line-height:1.8; margin-top:10px; }
   .product-actions { margin-top:16px; }
   .product-actions .pill { padding:12px 23px; }
@@ -1651,3 +1651,41 @@ button[hidden],[hidden] {
 .product-stats .accuracy-rate strong{font-family:"Noto Serif JP",serif;font-size:65px;line-height:1.5;letter-spacing:-.07em}
 @media(min-width:801px) and (max-width:1100px){.product-stats .accuracy-rate strong{font-size:56px}}
 @media(max-width:560px){.product-stats .accuracy-rate strong{font-size:52px}}
+
+.home-call-benefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.home-call-benefits li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+
+.home-call-benefits li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.home-call-benefits li > span {
+  padding-top: 4px;
+  color: #ff9564;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.home-call-benefits h3 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.home-call-benefits p {
+  margin-top: 4px;
+  color: #a0a0a4;
+  font-size: 13px;
+  line-height: 1.7;
+}
