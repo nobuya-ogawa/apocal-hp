@@ -1692,8 +1692,12 @@ button[hidden],[hidden] {
   margin-top: 25px;
 }
 
-.home-call-console {
+.home-call-visual {
   min-width: 0;
+}
+
+.home-call-console {
+  position: relative;
   overflow: hidden;
   border: 1px solid #35363c;
   border-radius: 16px;
@@ -1761,41 +1765,91 @@ button[hidden],[hidden] {
   font-size: 10px;
 }
 
-.home-call-ai {
-  margin-bottom: 8px;
-  padding: clamp(8px, 1.25vw, 14px);
-  border: 1px solid #ead0bf;
-  border-radius: 8px;
-  background: #fff7f1;
+.home-call-scene {
+  padding: 14px clamp(12px, 2vw, 22px) 25px;
+  margin-bottom: -12px;
+  border: 1px solid #553528;
+  border-radius: 16px 16px 0 0;
+  background: radial-gradient(ellipse at 50% 30%, #40271f 0%, transparent 72%), #1d1819;
+  color: #f6eee9;
 }
 
-.home-call-ai h4,
-.home-call-console-detail h4 {
-  margin: 0;
-  font-size: clamp(10px, 1.1vw, 13px);
+.home-call-scene-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.home-call-scene-heading h3 {
+  font-size: clamp(13px, 1.3vw, 16px);
+}
+
+.home-call-scene-heading > span {
+  color: #efb498;
+  font-size: 10px;
+}
+
+.home-call-scene-art {
+  display: grid;
+  grid-template-columns: auto minmax(44px, 144px) auto;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 20px);
+  margin: 8px 0 10px;
+}
+
+.home-call-avatar {
+  display: grid;
+  place-items: center;
+  width: clamp(54px, 6vw, 78px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid #6a534c;
+  border-radius: 50%;
+}
+
+.home-call-avatar-customer {
+  background: #344057;
+}
+
+.home-call-avatar-ai {
+  border-color: #a15a3d;
+  background: #4f2d23;
+}
+
+.home-call-avatar svg {
+  display: block;
+  width: 90%;
+}
+
+.home-call-scene-wave {
+  width: 100%;
+  color: #ff9a6b;
 }
 
 .home-call-dialogue {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
-  margin: 8px 0 0;
+  margin: 0;
 }
 
 .home-call-dialogue > div {
   padding: 7px 9px;
-  border: 1px solid #ead9cc;
+  border: 1px solid #53464b;
   border-radius: 6px;
-  background: #fff;
+  background: #2b2429;
 }
 
 .home-call-dialogue > div:last-child {
-  border-color: #f0d1bc;
-  background: #ffeadc;
+  border-color: #704634;
+  background: #3a251e;
 }
 
 .home-call-dialogue dt {
-  color: #89411f;
+  color: #f2b69a;
   font-size: 10px;
   font-weight: 700;
 }
@@ -1804,6 +1858,11 @@ button[hidden],[hidden] {
   margin: 3px 0 0;
   font-size: 12px;
   line-height: 1.55;
+}
+
+.home-call-console-detail h4 {
+  margin: 0;
+  font-size: clamp(10px, 1.1vw, 13px);
 }
 
 .home-call-metrics,
@@ -1870,11 +1929,6 @@ button[hidden],[hidden] {
   color: #206747;
   font-size: 9px;
   font-weight: 700;
-}
-
-.home-call-assist-heading > .home-call-ai-status {
-  background: #f9dfcd;
-  color: #843717;
 }
 
 .home-call-assist-question {
