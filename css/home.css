@@ -1656,7 +1656,7 @@ button[hidden],[hidden] {
 
 .home-call-inner {
   display: grid;
-  grid-template-columns: minmax(0, .85fr) minmax(0, 1.45fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
   align-items: center;
   gap: clamp(32px, 5vw, 86px);
   max-width: 1260px;
@@ -1674,6 +1674,7 @@ button[hidden],[hidden] {
   margin-top: 15px;
   font: 500 clamp(28px, 3vw, 43px)/1.46 "Noto Serif JP", serif;
   letter-spacing: -.035em;
+  white-space: nowrap;
 }
 
 .home-call-description {
@@ -1981,6 +1982,10 @@ button[hidden],[hidden] {
 @media (max-width: 520px) {
   .home-call {
     padding-inline: 20px;
+  }
+
+  .home-call-lead {
+    font-size: min(28px, 7.2vw);
   }
 
   .home-call-console-bar {
