@@ -1,5 +1,5 @@
 /* Additional information for visitors considering adoption. */
-#target,#use-case,#plan,#pricing{scroll-margin-top:96px}
+#target,#use-case,#plan,#pricing,#siteExampleHeading,#supportScopeHeading{scroll-margin-top:96px}
 .decision-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:24px;font-size:.83rem;font-weight:700;color:var(--ink-2)}
 .decision-links a{border-bottom:1px solid #d7bba4;padding-bottom:3px}
 .decision-links a:hover,.guide-link:hover{color:var(--brand-2)}
@@ -187,3 +187,38 @@ a:focus-visible{outline:3px solid var(--brand-2);outline-offset:5px}
 .use-case-video-frame{width:min(640px,max(320px,calc((100svh - 456px)*4/3)));max-width:100%}
 .use-case-contact{margin-top:28px}
 @media(max-width:760px){.use-case-showcase{padding:22px 16px 20px}.use-case-video-frame{width:100%;max-width:560px}.use-case-contact{margin-top:24px}}
+
+/* Priority content: concrete deliverables and scope before adoption. */
+.priority-example,.support-scope{margin-top:56px;padding:40px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.priority-heading{max-width:760px;margin-bottom:26px}
+.priority-heading .tag{font-size:.72rem;margin-bottom:12px}
+.priority-heading h3{font-size:1.55rem;line-height:1.6}
+.priority-heading>p{margin-top:12px;color:var(--ink-2);font-size:.9rem;line-height:1.9}
+.evidence-strip{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.evidence-strip span{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--bg-soft);font-size:.78rem;color:var(--brand-2);font-weight:700}
+.before-after-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.change-card{padding:26px;background:var(--bg-soft);border-radius:10px}
+.change-card.after{background:#fff3e9;border:1px solid #edd9c9}
+.change-label{font-family:Manrope,sans-serif;font-weight:700;font-size:.74rem;color:var(--muted)}
+.after .change-label{color:var(--brand-2)}
+.change-card h4{margin:12px 0;font-size:1.08rem;line-height:1.7}
+.change-card p,.deliverable-example blockquote,.example-results dd{font-size:.87rem;line-height:1.9;color:var(--ink-2)}
+.deliverable-example{display:grid;grid-template-columns:1fr 1.3fr;gap:28px;padding:28px 0;margin-top:8px;border-bottom:1px solid var(--line)}
+.deliverable-example h4{font-size:1.05rem;line-height:1.8;margin-top:10px}
+.deliverable-example blockquote{border-left:3px solid var(--brand);padding-left:20px;margin:0}
+.example-results{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.example-results dt{font-size:.8rem;color:var(--brand-2);font-weight:700;margin-bottom:8px}
+.scope-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.scope-card{display:flex;flex-direction:column;border-top:3px solid var(--brand);padding:24px 20px;background:var(--bg-soft);border-radius:0 0 10px 10px}
+.scope-card h4{margin:14px 0;font-size:1.04rem;line-height:1.8}
+.scope-card p{font-size:.86rem;color:var(--ink-2);line-height:1.9}
+.scope-card .scope-output{margin-top:auto;padding-top:24px}
+.scope-output strong{display:block;font-size:.75rem;color:var(--brand-2);margin-bottom:5px}
+.scope-note{font-size:.78rem;color:var(--muted);margin:20px 0 32px;line-height:1.9}
+.contract-details{padding:28px;background:#fffcfa;border:1px solid #edd9c9;border-radius:10px}
+.contract-details h4{font-size:1.15rem;margin-bottom:20px;line-height:1.7}
+.contract-details dl>div{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:16px 0;border-top:1px solid var(--line);font-size:.86rem;line-height:1.9}
+.contract-details dt{font-weight:700;color:var(--brand-2)}
+.contract-details dd{color:var(--ink-2)}
+@media(max-width:960px){.priority-example,.support-scope{padding:28px}.scope-grid{gap:14px}.scope-card{padding:22px 16px}}
+@media(max-width:760px){.scope-grid,.before-after-grid,.deliverable-example,.example-results{grid-template-columns:1fr}.priority-example,.support-scope{padding:24px 20px;margin-top:38px}.priority-heading h3{font-size:1.3rem}.change-card{padding:22px}.contract-details{padding:22px 18px}.contract-details dl>div{grid-template-columns:1fr;gap:6px}.deliverable-example{gap:18px}.scope-card .scope-output{padding-top:18px}}
