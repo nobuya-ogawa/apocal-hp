@@ -30,6 +30,17 @@
     ],
     "predeploy": [
       "node \"$PROJECT_DIR/scripts/check-agent-chatbot.mjs\""
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Robots-Tag",
+            "value": "noindex"
+          }
+        ]
+      }
     ]
   }
 }
